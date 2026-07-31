@@ -1,3 +1,6 @@
+import subprocess
+import sys
+import pkg_resources
 import streamlit as st
 import yfinance as yf
 import pandas as pd
@@ -7,9 +10,9 @@ from datetime import datetime
 
 st.set_page_config(page_title="FX99 Live Alerts", layout="wide")
 
-# --- CONFIG (CHANGE THESE TWO LINES) ---
-WHATSAPP_NUMBER = "+918098284754"   # Replace with your number with +91
-WHATSAPP_API_KEY = "zJ9HmywRYGtS"   # Your API key
+# --- CONFIG (இங்கே மட்டும் மாற்றவும்) ---
+WHATSAPP_NUMBER = "+918098284754"   # உங்க எண்ணை +91 உட்பட எழுதவும்
+WHATSAPP_API_KEY = "zJ9HmywRYGtS"   # உங்க API Key-ஐ எழுதவும்
 
 ASSETS = {"US100": "NQ=F", "XAUUSD": "GC=F", "US30": "YM=F", "WTI": "CL=F", "SP500": "ES=F"}
 
